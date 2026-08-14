@@ -547,7 +547,7 @@ Name: ${name}
 Phone: ${phone}
 Address: ${address}
 ${notes ? "Notes: " + notes : ""}
-Payment: InstaPay or Cash on Delivery (to confirm)`;
+Payment: InstaPay or contact Mory for physical payment arrangments. (to confirm)`;
 
   showThankYou(summary);
 }
@@ -561,8 +561,7 @@ function showThankYou(summary){
     <div class="thankyou">
       <h4>Order ready to send</h4>
       <p>Copy your order below, then send it to Mory on Instagram to
-      confirm. You can pay by InstaPay to <b>01273532992</b>, or arrange
-      Cash on Delivery. Delivery takes 4–10 working days.</p>
+      confirm. You can pay by InstaPay to <b>01273532992</b>, or contact Mory for physical payment arrangments. Delivery takes 4–10 working days.</p>
       <div class="order-summary-box" id="summaryBox">${summary}</div>
       <button class="copy-btn" onclick="copySummary()">Copy Order Details</button><br>
       <a class="ig-btn" href="https://ig.me/m/${INSTAGRAM_HANDLE}" target="_blank" rel="noopener">Open Instagram DM</a>
